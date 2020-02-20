@@ -29,6 +29,7 @@
     "babel-plugin-module-resolver": "3.2.0",
     "date-time-format-timezone": "1.0.21",
     "dayjs": "1.8.19",
+    "formik": "2.1.4",
     "jsc-android": "241213.1.0",
     "path": "0.12.7",
     "pretty-quick": "2.0.1",

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { compose, bindActionCreators, Dispatch } from 'redux';
 import { connect } from 'react-redux';
 import { injectIntl, WrappedComponentProps } from 'react-intl';
@@ -8,7 +8,7 @@ import {
   NavigationStructureProps,
   ScreenPropsConfig,
 } from '@common/types/navigation';
-import { NavigationTitle } from '@common/components';
+import { SearchBar } from './components/SearchBarComponent/SearchBar.component';
 import {
   MainArticlesScreenState,
   ArticleData,
@@ -75,7 +75,7 @@ export const MainScreenModule: ScreenPropsConfig = {
   module: MainScreenComposed,
   name: 'MainScreen',
   options: {
-    header: () => <NavigationTitle title="mainArticles.header" />,
+    header: () => <SearchBar />,
     headerStyle: {
       height: 60,
     },
