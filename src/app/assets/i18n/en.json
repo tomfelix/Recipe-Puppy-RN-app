@@ -1,9 +1,9 @@
 {
-  "main.title": "Time for new information",
+  "main.title": "Recipe Puppy",
   "main.button": "Next page",
   "profile.title": "Profile",
   "profile.button": "Back",
-  "picker.button.getArticles": "Get Articles",
+  "picker.button.getRecipes": "Get recipes",
   "picker.button.clear": "Clear Filters",
   "picker.topic.sport": "sport",
   "picker.topic.fashion": "fashion",
@@ -15,11 +15,12 @@
   "picker.sort.popularity": "popularity",
   "picker.sort.writtenIn": "writtenIn",
   "picker.sort.publishedAt": "publishedAt",
-  "mainArticles.header": "Time for new information",
-  "mainArticles.author": "Author",
-  "mainArticles.knowMore": "Know more",
-  "articlePage.sourceLink": "Read more here > Source: {source}",
-  "articlePage.urlError": "Don't know how to open URI: {url}",
-  "articlePage.urlUndefined": "Sorry, URI is incorrect",
-  "articlePage.back": "Back to articles"
+  "mainRecipes.header": "Recipe Puppy",
+  "mainRecipes.author": "Author",
+  "mainRecipes.placeholder": "Search for some recipes",
+  "mainRecipes.knowMore": "Know more",
+  "recipePage.sourceLink": "Read more here > Source: {source}",
+  "recipePage.urlError": "Don't know how to open URI: {url}",
+  "recipePage.urlUndefined": "Sorry, URI is incorrect",
+  "recipePage.back": "Back to recipes"
 }

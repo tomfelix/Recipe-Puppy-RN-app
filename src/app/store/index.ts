@@ -3,17 +3,11 @@ import logger from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 import rootReducer from '@store/RootReducer';
 import rootSaga from '@store/RootSaga';
-import { MainArticlesScreenState } from '@core/pages/MainArticlesScreen/namespace';
-import { getArticlesService } from '@core/services';
+import { MainScreenState } from '@core/pages/MainScreen/namespace';
 
 export interface RootStore {
-  main: MainArticlesScreenState;
+  main: MainScreenState;
 }
-
-const dependencies = {
-  getArticlesService,
-};
-export type Dependencies = typeof dependencies;
 
 const sagaMiddleware = createSagaMiddleware();
 const usedMiddleware = sagaMiddleware;

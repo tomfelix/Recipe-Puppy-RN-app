@@ -6,16 +6,16 @@ import axios, {
 } from 'axios';
 import Config from 'react-native-config';
 import { ErrorCodes } from '../constants';
-import asyncStorageService from './async-storage';
 
 class ApiService {
   public request: AxiosInstance;
 
   constructor() {
     const config: AxiosRequestConfig = {
-      baseURL: Config.API_URL,
+      baseURL: Config.API_URL2,
       headers: {
         'Content-Type': 'application/json',
+        origin: '',
         ...this.getHeaders(),
       },
     };
@@ -50,15 +50,7 @@ class ApiService {
   }
 
   private getHeaders() {
-    const token = asyncStorageService.get('token');
-
-    let headers = {};
-
-    if (token) {
-      headers = {
-        'x-auth-token': token,
-      };
-    }
+    const headers = {};
 
     return {
       ...headers,
