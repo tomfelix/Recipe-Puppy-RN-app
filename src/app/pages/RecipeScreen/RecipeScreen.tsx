@@ -39,12 +39,14 @@ class RecipeScreen extends PureComponent<RecipeScreenProps> {
   public render() {
     const { intl, navigation } = this.props;
     const recipeData: RecipeData = navigation.state.params?.recipe;
-
     return (
       <RecipeWrapper>
         <RecipeHeader>{recipeData.title}</RecipeHeader>
         <RecipeContentWrapper>
-          <RecipeDescription>{recipeData.ingredients}</RecipeDescription>
+          <RecipeDescription>
+            {intl.formatMessage({ id: 'recipePage.ingredients' })}{' '}
+            {recipeData.ingredients}
+          </RecipeDescription>
           <RecipeImage
             resizeMode="cover"
             source={{ uri: recipeData.thumbnail }}

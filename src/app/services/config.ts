@@ -12,7 +12,7 @@ class ApiService {
 
   constructor() {
     const config: AxiosRequestConfig = {
-      baseURL: Config.API_URL2,
+      baseURL: Config.API_URL,
       headers: {
         'Content-Type': 'application/json',
         origin: '',

@@ -1,3 +1,4 @@
+import React from 'react';
 import { compose, bindActionCreators, Dispatch } from 'redux';
 import { connect } from 'react-redux';
 import { injectIntl, WrappedComponentProps } from 'react-intl';
@@ -7,6 +8,7 @@ import {
   NavigationStructureProps,
   ScreenPropsConfig,
 } from '@common/types/navigation';
+import { NavigationTitle } from '@core/common/components';
 import { MainScreenState, RecipeData } from './namespace';
 import { fetchRecipes } from './store/actions';
 import MainScreen from './MainScreen';
@@ -47,5 +49,10 @@ const MainScreenComposed = compose<
 export const MainScreenModule: ScreenPropsConfig = {
   module: MainScreenComposed,
   name: 'Recipe Puppy',
-  options: {},
+  options: {
+    header: () => <NavigationTitle title="mainRecipes.header" />,
+    headerStyle: {
+      height: 60,
+    },
+  },
 };

@@ -11,7 +11,6 @@ type NavigationHeaderProps = OwnProps & WrappedComponentProps;
 class NavigationHeader extends PureComponent<NavigationHeaderProps> {
   public render() {
     const { intl, title } = this.props;
-    console.log('title', this.props);
 
     return (
       <NavigationWrapper>
